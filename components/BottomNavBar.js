@@ -4,7 +4,16 @@ import { FiChevronDown } from 'react-icons/fi';
 
 const BottomNavBar = () => {
   return (
-    <div className="w-[1230px] h-[50px]  my-2  mx-[160px] flex justify-between">
+    <div className="w-full h-11 pt-5 ">
+      <div
+      className=" w-[1140px] 
+    h-full 
+    mx-auto 
+    xl:px-20
+    md:px-10
+    sm:px-2
+    px-4">
+      <div  className=" flex  justify-between">
       <div>
         <h1 className='text-darkblue  font-bold text-[34px]    text-center font-josefin'>Hekto</h1>
        </div>
@@ -24,8 +33,8 @@ const BottomNavBar = () => {
           <button className="w-[40px] bg-pink h-[35px] border border-pink "><VscSearch color='white' className=' relative left-[10px] h-[16px] w-[16px] text-[24px]'/></button>
         </div>
        
-      
-
+      </div>
+</div>
 
     </div>
   )

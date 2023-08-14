@@ -8,8 +8,15 @@ import {SlBasket} from "react-icons/sl";
 
 const AboveBar = () => {
   return (
-    <div className='w-full h-11 bg-violet '>
-       <div className="flex justify-between  text-esra h-full px-[160px]">
+    <div className='w-full h-11 bg-violet'>
+      <div className=" w-[1137px] 
+    h-full 
+    mx-auto 
+    xl:px-20
+    md:px-10
+    sm:px-2
+    px-4">
+       <div className="flex justify-between  text-esra ">
        <div className="flex justify-start items-center gap-4 text-zinc-100 h-full">
        <div className="flex justify-start items-center gap-2.5 h-full">
         <CiMail color='white' className=" h-[16px] w-[16px]"/>
@@ -43,7 +50,7 @@ const AboveBar = () => {
        </div>
        </div>
     
-     
+     </div>
     </div>
   )
 }
