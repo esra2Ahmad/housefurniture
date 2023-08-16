@@ -4,6 +4,7 @@ import './globals.css';
 import BottomNavBar from '../../components/BottomNavBar';
 import { Promotional } from '../../components/Promotional';
 import FetauredProduct from '../../components/FetauredProduct';
+import LeatestProduct from '../../components/LeatestProduct';
 
 const josefin = Josefin_Sans({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export default function Home() {
     <BottomNavBar/>
     <Promotional/>
     <FetauredProduct/>
+    <LeatestProduct/>
     </div>
   )
 }

@@ -8,7 +8,7 @@ const Card = (props) => {
             <div className="w-[220px] h-[200px] pt-[50px]">
         <Image src={props.image} width={150} height={140} alt=""/>
         </div>
-        <div className=' w-[150px] text-center space-y-2  '>
+        <div className=' w-[150px] text-center space-y-2  pt-[30px]'>
         <p className=' text-pink text-[16px] font-bold leading-normal  '>{props.title}</p>
         <div className='flex gap-1  justify-center'>
         <div className=' w-3 h-1 border border-green bg-green  hover:red'>  </div>
