@@ -62,3 +62,13 @@ export const details=[
         price:"$42.00",
     }
 ]
+export const items =[
+    {name:"arabic",
+
+    
+},
+    {name:"french",
+  },
+    {name:"spanish",
+    },
+]

@@ -23,7 +23,7 @@ module.exports = {
     },
     colors: {
       violet:"#7E33E0",
-     esra:"#F1F1F1",
+     white:"#F1F1F1",
      red:"#991b1b",
      blue:"#151875",
      darkblue:"#0D0E43",
@@ -32,7 +32,9 @@ module.exports = {
      pink:"#FB2E86",
      medred:'#FB2448',
     gray:"#E7E6EF",
+    lightgray:'#1A0B5B4D',
     black:"#000000",
+    babypurple:"#F1F0FF",
     
     lightpurple:"#8A8FB9",
     purple:"#ECD2FA",

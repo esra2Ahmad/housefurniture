@@ -5,8 +5,21 @@ import {FiPhoneCall} from "react-icons/fi";
 import {FiChevronDown} from "react-icons/fi";
 import {CiUser} from "react-icons/Ci";
 import {SlBasket} from "react-icons/sl";
+import DropDownMenu from './DropDownMenu';
+import { items } from './Data';
+
 
 const AboveBar = () => {
+  const languages = [
+    {
+      name: "Arabic",
+      action: () => {},
+    },
+    {
+      name: "English",
+      action: () => {},
+    },
+  ];
   return (
     <div className='w-full h-11 bg-violet'>
       <div className=" w-[1137px] 
@@ -15,42 +28,48 @@ const AboveBar = () => {
     xl:px-20
     md:px-10
     sm:px-2
-    px-4">
-       <div className="flex justify-between  text-esra ">
-       <div className="flex justify-start items-center gap-4 text-zinc-100 h-full">
-       <div className="flex justify-start items-center gap-2.5 h-full">
-        <CiMail color='white' className=" h-[16px] w-[16px]"/>
+    px-4  flex justify-center items-center">
+       <div className="flex justify-between  gap-80  text-white  ">
+       <div className="flex  gap-4  ">
+       <div className="flex justify-center  items-center gap-2.5 ">
+        <CiMail color='white' className="  w-4 h-4"/>
         <p>mhhasanul@gmail.com</p>
        </div>
        <div className="flex justify-start items-center gap-2.5 h-full">
-        <FiPhoneCall color='white' className=" h-[16px] w-[16px]"/>
+        <FiPhoneCall color='white' className=" h-4 w-4 "/>
         <p>(12345)67890</p>
        </div>
        </div>
        <div className="flex justify-between items-center gap-4 h-full">
         <div className=" flex  items-center  justify-center">
-        <p className="text-zinc-100 text-base">English</p>
-        <FiChevronDown  color='white' className=" h-[16px] w-[16px]"/>
+        <div className="flex justify-between items-center gap-4 h-full">
+            <DropDownMenu
+              label="english"
+              items={items.name}
+              color="text-white "
+              bgColor="bg-violet"
+            />
         </div>
         <div className=" flex  items-center  justify-center">
-        <p className="text-zinc-100 text-base">USD</p>
-        <FiChevronDown  color='white' className=" h-[16px] w-[16px]"/>
+        <p className=" text-base">USD</p>
+        <FiChevronDown  color='white' className=" h-4 w-4"/>
         </div>
         <div className=" flex  items-center  justify-center">
-        <p className="text-zinc-100 text-base">Login</p>
-        <CiUser  color='white' className=" h-[16px] w-[16px]"/>
+        <p className=" text-base">Login</p>
+        <CiUser  color='white' className=" h-4 w-4"/>
         </div>
         <div className=" flex  items-center  justify-center">
-        <p className="text-zinc-100 text-base">Whishist</p>
-        <CiHeart  color='white' className=" h-[16px] w-[16px]"/>
+        <p className=" text-base">Whishist</p>
+        <CiHeart  color='white' className=" h-4 w-4"/>
         </div>
         <div className=" flex  items-center  justify-center">
-        <SlBasket  color='white' className=" h-[16px] w-[16px]"/>
+        <SlBasket  color='white' className=" h-4 w-4"/>
         </div>
        </div>
        </div>
     
      </div>
+    </div>
     </div>
   )
 }
