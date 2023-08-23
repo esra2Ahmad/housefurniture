@@ -7,6 +7,7 @@ import FetauredProduct from '../../components/FetauredProduct';
 import LeatestProduct from '../../components/LeatestProduct';
 import Offers from '../../components/Offers';
 import UniqueFeature from '../../components/UniqueFeature';
+import Heropromo from '../../components/Heroprom';
 
 const josefin = Josefin_Sans({ subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ export default function Home() {
     <div >
     <AboveBar/>
     <BottomNavBar/>
-    <Promotional/>
+    <Heropromo/>
     <FetauredProduct/>
     <LeatestProduct/>
     <Offers/>
