@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
-import { items } from "./Data";
+
 
 
 
@@ -52,7 +52,7 @@ const DropDownMenu = ({
             <div
               key={item.name}
               className=" p-1 cursor-pointer border-b"
-              onClick={item.action}
+              onClick={ () => {}}
             >
               <li className={`p-2 text-sm ${color} hover:${hoverColor}`}>
                 {item.name}

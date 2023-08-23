@@ -72,3 +72,16 @@ export const items =[
     {name:"spanish",
     },
 ]
+export const heropromo=[{
+    title: "New Furniture Collection",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    title: "old Furniture Collection",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    title: "older Furniture Collection",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+]

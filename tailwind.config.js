@@ -35,6 +35,9 @@ module.exports = {
     lightgray:'#1A0B5B4D',
     black:"#000000",
     babypurple:"#F1F0FF",
+    lightpink:'#ECD2FA',
+    lightviolet:"#F2F0FF",
+
     
     lightpurple:"#8A8FB9",
     purple:"#ECD2FA",

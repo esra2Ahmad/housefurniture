@@ -1,8 +1,24 @@
+"use client";
 import React from 'react';
 import {VscSearch} from "react-icons/Vsc";
 import { FiChevronDown } from 'react-icons/fi';
+import DropDownMenu from './DropDownMenu';
+import Link from 'next/link';
 
 const BottomNavBar = () => {
+  const places = [
+    {
+      name: "syria",
+      action: () => {
+
+      },
+    },
+    {
+      name: "USA",
+      action: () => {
+      },
+    },
+  ];
   return (
     <div className="w-full h-11 pt-5 ">
       <div
@@ -17,21 +33,25 @@ const BottomNavBar = () => {
       <div>
         <h1 className='text-darkblue  font-bold text-[34px]    text-center font-josefin'>Hekto</h1>
        </div>
-       <div className="flex justify-between gap-6  items-center">
+       <div className="flex justify-between gap-8 text-[16px] text-darkblue  items-center">
         <div className='flex items-end '>
-        <p className="text-pink   text-[16px] ">Home</p>
-        <FiChevronDown  color=' #FB2E86' />
+        <DropDownMenu
+              label="Home"
+              items={places}
+              color="text-pink "
+              bgColor="bg-white"
+            />
         </div>
-        <p className="text-[16px] text-darkblue">Pages</p>
-        <p className="text-[16px] text-darkblue">Products</p>
-        <p className="text-[16px] text-darkblue">Blog</p>
-        <p className="text-[16px] text-darkblue">Shop</p>
-        <p className="text-[16px] text-darkblue">Contact</p>
+        <Link href="/home">Pages</Link>
+        <Link href="/home">Products</Link>
+        <Link  href="/home" >Blog</Link>
+        <Link href="/home">Shop</Link>
+        < Link  href="/home">Contact</Link>
         </div>
-        <div className="flex  items-center">
+        <form className="flex  items-center">
           <input placeholder='' className='h-[35px] w-[200px]   border-[1px] border-gray'></input>
           <button className="w-[40px] bg-pink h-[35px] border border-pink "><VscSearch color='white' className=' relative left-[10px] h-[16px] w-[16px] text-[24px]'/></button>
-        </div>
+        </form>
        
       </div>
 </div>

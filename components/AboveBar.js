@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import {CiHeart} from "react-icons/Ci";
 import {CiMail} from "react-icons/Ci";
@@ -6,7 +7,7 @@ import {FiChevronDown} from "react-icons/fi";
 import {CiUser} from "react-icons/Ci";
 import {SlBasket} from "react-icons/sl";
 import DropDownMenu from './DropDownMenu';
-import { items } from './Data';
+
 
 
 const AboveBar = () => {
@@ -20,6 +21,20 @@ const AboveBar = () => {
       action: () => {},
     },
   ];
+  const currencies = [
+    {
+      name: "USD",
+      action: () => {
+
+      },
+    },
+    {
+      name: "EUR",
+      action: () => {
+      },
+    },
+  ];
+
   return (
     <div className='w-full h-11 bg-violet'>
       <div className=" w-[1137px] 
@@ -40,19 +55,23 @@ const AboveBar = () => {
         <p>(12345)67890</p>
        </div>
        </div>
-       <div className="flex justify-between items-center gap-4 h-full">
-        <div className=" flex  items-center  justify-center">
-        <div className="flex justify-between items-center gap-4 h-full">
+       
+        <div className=" flex  items-center  justify-between h-full gap-5">
+        <div className="flex justify-between items-center  h-full">
             <DropDownMenu
-              label="english"
-              items={items.name}
+              label="English"
+              items={languages}
               color="text-white "
               bgColor="bg-violet"
             />
         </div>
         <div className=" flex  items-center  justify-center">
-        <p className=" text-base">USD</p>
-        <FiChevronDown  color='white' className=" h-4 w-4"/>
+        <DropDownMenu
+              label="USD"
+              items={currencies}
+              color="text-white "
+              bgColor="bg-violet"
+            />
         </div>
         <div className=" flex  items-center  justify-center">
         <p className=" text-base">Login</p>
@@ -70,7 +89,7 @@ const AboveBar = () => {
     
      </div>
     </div>
-    </div>
+    
   )
 }
 
