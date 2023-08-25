@@ -37,6 +37,7 @@ module.exports = {
     babypurple:"#F1F0FF",
     lightpink:'#ECD2FA',
     lightviolet:"#F2F0FF",
+    blue1:"#2F1AC4",
 
     
     lightpurple:"#8A8FB9",

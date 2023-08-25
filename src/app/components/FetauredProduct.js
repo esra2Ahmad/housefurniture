@@ -1,5 +1,5 @@
 'use client'
-import {products} from "../components/Data";
+import {products} from "./Data";
 import Card from './Card';
 import { useState } from 'react';
 
@@ -69,7 +69,7 @@ const FetauredProduct = () => {
         ))}
       </div>
       </div>
-      <div className="w-[91px] h-1  flex justify-start items-center gap-1 mx-auto">
+      <div className="w-[91px] h-1  flex justify-start items-center gap-1 mx-auto  mt-5">
       <button
           className={` h-1 rounded-[10px] hover:w-5 hover:bg-pink  duration-300 ${
             activeIndex === 0 ? "w-6 bg-pink" : "w-4 bg-pink"

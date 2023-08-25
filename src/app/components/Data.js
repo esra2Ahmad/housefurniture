@@ -1,24 +1,24 @@
 export  const products=[
     {
-        image:"/../images/image 1168.jpg",
+        image:"/../images/6db0a7630b347e6423288fc09447f1a8.png",
         title:"Cantilever chair",
         code:"Code - Y523201",
         price:"$42.00",
 },
 {
-    image:"/../images/image 1(1).jpg ",
+    image:"/../images/81f40d5069977639c120b46b02efd85d.png",
     title:"Cantilever chair",
     code:"Code - Y523201",
     price:"$42.00",
 },
 {
-    image:"/../images/image 1169.jpg",
+    image:"/../images/ec2feb66129667973939b2ea5191c695.png",
     title:"Cantilever chair",
     code:"Code - Y523201",
     price:"$42.00",
 },
 {
-    image:"/../images/image 1167.jpg",
+    image:"/../images/678776be52471704ed6aa26cd1d28dd8.png",
     title:"Cantilever chair",
     code:"Code - Y523201",
     price:"$42.00",
@@ -33,7 +33,7 @@ export const details=[
         price:"$42.00",
     },
     {
-        image:"/../images/image 15.png",
+        image:"/../images/image 1.png",
         title:"Comfort Handy Craft",
         disacount:"$65.00",
         price:"$42.00",

@@ -3,9 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 
-
 import Promotional from "./Promotional";
-import { heropromo } from "../components/Data";
+import { heropromo } from "./Data";
 
 const Heropromo = () => {
   const [activeIndex, setActiveIndex] = useState(0);
