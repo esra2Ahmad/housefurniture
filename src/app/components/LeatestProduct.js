@@ -1,60 +1,75 @@
-"use client"
+"use client";
 import { details } from "./Data";
 import Details from "./Details";
 import { useState } from "react";
 
 const LeatestProduct = () => {
-  const [active, setActive] = useState(0);
+  const [activeType, setActiveType] = useState(0);
   return (
     <div className="pt-[40px]">
       <h1 className=" text-dark text-center pt-[30px] font-bold  text-[42px]  leading-normal  font-Josefin">
         {" "}
         LeatesProducts
       </h1>
-      <div className="w-full">
-        <div className="flex justify-center items-center">
-          <ul className="w-[550px]  h-[22px] gap-16 list-none flex pt-[40px]">
-            
-              
-              <li  className="  text-pink  font-normal text-[16px]  ">New Arrival</li>
-            
-            <button
-              className={` hover:text-pink  font-normal text-[16px]  ${
-                active === 1 ? " text-pink underline": "text-blue"
-              }`}
-              onClick={() => {
-                setActive(1);
-              }}
-            >
-              <li>Best Seller</li>
-            </button>
-            <li className="text-[18px] font-normal font-josefin  text-blue">
-              Featured
-            </li>
-            <li className="text-[18px] font-normal font-josefin  text-blue">
-              Special Offer
-            </li>
-          </ul>
-        </div>
-        <div
-          className=" w-[1177px] 
-    h-full 
-    mx-auto 
-    xl:px-20
-    md:px-10
-    sm:px-2
-    px-4 grid grid-cols-3   gap-14  "
+      <ul className="flex justify-between items-center gap-[60px] mx-auto mb-[58px] w-[527px] mt-10">
+        <button
+          className={` hover:text-pink text-sm font-normal text-[16px] ${
+            activeType === 0 ? "underline text-pink" : "text-blue"
+          }`}
+          onClick={() => {
+            setActiveType(0);
+          }}
         >
-          {details.map((detail, index) => (
-            <Details
-              key={index}
-              image={detail.image}
-              title={detail.title}
-              disacount={detail.disacount}
-              price={detail.price}
-            />
-          ))}
-        </div>
+          <li>New Arrival</li>
+        </button>
+        <button
+          className={` hover:text-pink text-sm font-normal text-[16px] ${
+            activeType === 1 ? "text-pink underline" : "text-blue"
+          }`}
+          onClick={() => {
+            setActiveType(1);
+          }}
+        >
+          <li>Best Seller</li>
+        </button>
+        <button
+          className={` hover:text-pink text-sm font-normal text-[16px] ${
+            activeType === 2 ? "text-pink underline" : "text-blue"
+          }`}
+          onClick={() => {
+            setActiveType(2);
+          }}
+        >
+          <li>Featured</li>
+        </button>
+        <button
+          className={` hover:text-pink text-sm font-normal text-[16px] ${
+            activeType === 3 ? "text-pink underline" : "text-blue"
+          }`}
+          onClick={() => {
+            setActiveType(3);
+          }}
+        >
+          <li>Special Offer</li>
+        </button>
+      </ul>
+      <div
+        className=" w-[1186px] 
+    h-full 
+    mx-auto
+    md:px-0
+    sm:px-2 
+    grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-[37px] " 
+      >
+        {details.map((detail, index) => (
+          <Details
+            key={index}
+            image={detail.image}
+            title={detail.title}
+            disacount={detail.disacount}
+            price={detail.price}
+          />
+        ))}
       </div>
     </div>
   );

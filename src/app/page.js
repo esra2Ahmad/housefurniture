@@ -8,6 +8,8 @@ import LeatestProduct from "./components/LeatestProduct";
 import Offers from "./components/Offers";
 import UniqueFeature from "./components/UniqueFeature";
 import Heropromo from "./components/Heroprom";
+import TrendingProducts from "./components/TrendingProducts";
+import DiscountItem from "./components/DiscountItem";
 
 const josefin = Josefin_Sans({ subsets: ["latin"] });
 
@@ -21,6 +23,8 @@ export default function Home() {
       <LeatestProduct />
       <Offers />
       <UniqueFeature />
+      <TrendingProducts/>
+      <DiscountItem/>
     </div>
   );
 }

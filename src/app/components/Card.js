@@ -1,15 +1,35 @@
 import React from 'react'
 import Image from 'next/image';
+import { AiFillHeart, AiOutlineHeart, AiOutlineZoomIn } from "react-icons/ai";
 
 const Card = (props) => {
   return (
     <div className=" group w-[270px] h-[361px]  hover:bg-blue1 shadow flex flex-col items-center justify-start gap-3 ">
-        
+            
             <div className="w-[270px] h-[236px] flex justify-center items-center relative bg-white  ">
         <Image src={props.image}   width="0"
           height="0"
           sizes=" 70%"
           className="w-56  h-46 " alt="" />
+          <div className="absolute left-[15px]  top-1 hidden group-hover:flex flex-row justify-start items-center gap-[16px]">
+         
+         
+         <button
+           className=" hover:scale-125 duration-300 text-[#2F1AC4]  justify-center items-center flex">
+           <AiOutlineHeart/>
+         </button>
+   
+         <button
+           className=" hover:scale-125 duration-300 text-[#2F1AC4]  justify-center items-center flex">
+   
+         
+           <AiFillHeart />
+         </button>
+     
+       <button className=" hover:scale-125 duration-300 text-[#2F1AC4]  justify-center items-center flex">
+         <AiOutlineZoomIn />
+       </button>
+     </div>
         </div>
         <div className=""
         >
