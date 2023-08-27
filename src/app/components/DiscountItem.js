@@ -48,7 +48,11 @@ const DiscountItem = () => {
        
       </ul>
       <div className="flex w-[1214px] h-[597px] bg-red mx-auto">
-        <div className='w-[545px] h-[597px]'></div>
+        <div className='w-[545px] h-[597px]'>
+            <h1>20% Discount Of All Products</h1>
+            <h3>Eams Sofa Compact</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget <br/>feugiat habitasse nec, bibendum condimentum.</p>
+        </div>
       </div>
     </div>
   )
