@@ -14,6 +14,7 @@ module.exports = {
       fontFamily: {
         josefin: ["josefin", "sans-serif"],
         },
+        
         textShadow:{
           'xl': '0px 4px 4px rgba(0, 0, 0, 0.25);'
         },
@@ -41,6 +42,10 @@ module.exports = {
     neutral_100:"#f5f5f5",
     darkgray:"#ACABC3",
     medgray:"#B7BACB",
+    gray1:"#72718F",
+    medviolet:"#EEEFFB",
+    gray2:'#8A8FB9',
+    highviolet:'#E7E4F8',
 
     
     lightpurple:"#8A8FB9",

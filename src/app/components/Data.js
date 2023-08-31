@@ -107,3 +107,51 @@ export const trendingFeature = [
     disacount: "$42.00",
   },
 ];
+export const topCategory=[
+  {
+    image:"/images/top1.png",
+    title:"Mini LCW Chair",
+    price:"$56.000",
+  },
+  {
+    image:"/images/top2.png",
+    title:"Mini LCW Chair",
+    price:"$56.000",
+  },
+  {
+    image:"/images/top3.png",
+    title:"Mini LCW Chair",
+    price:"$56.000",
+  },
+  {
+    image:"/images/top1.png",
+    title:"Mini LCW Chair",
+    price:"$56.000",
+  },
+]
+export const blog=[
+  {
+    image:"/images/JIUjvqe2ZHg.png",
+    name:"Saber Ali",
+    Date:"21 August,2020",
+    title:"Top esssential Trends in 2021",
+    baragraph:"More off this less hello samlande lied much over tightly circa horse taped mightly",
+    read:"read more",
+  },
+  {
+    image:"/images/2dcYhvbHV-M.png",
+    name:"Saber Ali",
+    Date:"21 August,2020",
+    title:"Top esssential Trends in 2021",
+    baragraph:"More off this less hello samlande lied much over tightly circa horse taped mightly",
+    read:"read more",
+  },
+  {
+    image:"/images/2dcYhvbHV-M(1).png",
+    name:"Saber Ali",
+    Date:"21 August,2020",
+    title:"Top esssential Trends in 2021",
+    baragraph:"More off this less hello samlande lied much over tightly circa horse taped mightly",
+    read:"read more",
+  },
+]

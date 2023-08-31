@@ -130,7 +130,11 @@ const DiscountItem = () => {
           </div>
           <button className=" w-[200px] h-[57px] bg-pink text-white "> shop Now</button>
         </div>
-         <Image src="/images/tortuga-01-b 1.png"  width={699}  height={440} alt="sofa" className=""/>
+
+
+         <div  className="flex justify-center items-center bg-[url('/images/Ellipse 64.png')]  bg-no-repeat bg-center ">
+         <Image src="/images/tortuga-01-b 1.png"  width={699}  height={440} alt="sofa"/>
+         </div>
         
     
       </div> 
