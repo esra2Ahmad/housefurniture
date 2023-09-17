@@ -3,17 +3,7 @@
 import { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 
-
-
-
-
-const DropDownMenu = ({
-  label,
-  items,
-  color,
-  hoverColor,
-  bgColor,
-}) => {
+const DropDownMenu = ({ label, items, color, hoverColor, bgColor }) => {
   const [isOpne, setIsOpen] = useState(false);
   const toggleOpen = () => {
     setIsOpen((prev) => !prev);
@@ -52,7 +42,7 @@ const DropDownMenu = ({
             <div
               key={item.name}
               className=" p-1 cursor-pointer border-b"
-              onClick={ () => {}}
+              onClick={() => {}}
             >
               <li className={`p-2 text-sm ${color} hover:${hoverColor}`}>
                 {item.name}

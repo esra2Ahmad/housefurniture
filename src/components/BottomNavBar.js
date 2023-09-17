@@ -42,11 +42,11 @@ const BottomNavBar = () => {
               bgColor="bg-white"
             />
         </div>
-        <Link href="/home">Pages</Link>
-        <Link href="/home">Products</Link>
-        <Link  href="/home" >Blog</Link>
-        <Link href="/home">Shop</Link>
-        < Link  href="/home">Contact</Link>
+        <Link href="/about/details">Pages</Link>
+        <Link href="/about">Products</Link>
+        <Link  href="/SideBar" >Blog</Link>
+        <Link href="/shoplist">Shop</Link>
+        < Link  href="/order">Contact</Link>
         </div>
         <form className="flex  items-center">
           <input placeholder='' className='h-[35px] w-[200px]   border-[1px] border-gray'></input>

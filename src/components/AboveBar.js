@@ -1,9 +1,9 @@
 "use client";
+
 import React from "react";
 import { CiHeart } from "react-icons/Ci";
 import { CiMail } from "react-icons/Ci";
 import { FiPhoneCall } from "react-icons/fi";
-import { FiChevronDown } from "react-icons/fi";
 import { CiUser } from "react-icons/Ci";
 import { SlBasket } from "react-icons/sl";
 import DropDownMenu from "./DropDownMenu";

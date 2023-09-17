@@ -1,7 +1,11 @@
 
+import BottomNavBar from "@/components/BottomNavBar";
+import AboveBar from "@/components/AboveBar";
 import "./globals.css";
-import { Josefin_Sans } from "next/font/google";
-const josefin = Josefin_Sans({ subsets: ["latin"] })
+import List from "@/components/List";
+import Abovefooter from "@/components/footter/AboveFooter";
+import Bottomfooter from "@/components/footter/Bottomfooter";
+
 
 export const metadata = {
   title: 'housefurniture',
@@ -13,6 +17,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
+        
+
         </body>
     </html>
   )
