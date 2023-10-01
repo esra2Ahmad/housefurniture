@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Abovefooter = () => {
   return (
@@ -37,8 +38,8 @@ const Abovefooter = () => {
                 <div className='flex flex-col gap-6'>
                 <p className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>My Account</p>
                 <p className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>Discount</p>
-                <p className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>retuns</p>
-                <p className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>Orders History</p>
+                <Link href='/error' className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>retuns</Link>
+                <Link href="/order" className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>Orders History</Link>
                 <p className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>Order Tracking</p>
                 </div>
 
@@ -46,12 +47,12 @@ const Abovefooter = () => {
             <div className=' mt-[95px] flex flex-col  gap-10'>
                 <h1 className=' text-black  font-semibold leading-normal text-[22px] font-josefin'>Customer Care</h1>
                 <div className='flex flex-col gap-6'>
-                <p className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>Blog</p>
+                <Link  href='/singleblog'className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>Blog</Link>
                 <p className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>Browse the Shop</p>
                 <p className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>Category</p>
                 <p className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>Pre-Built Pages</p>
-                <p className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>Visual Composer Elements</p>
-                <p className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>WooCommerce Pages</p>
+                <Link href='/faq'className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>Visual Composer Elements</Link>
+                <Link href='/aboutus' className=' text-gray2  font-norml leading-normal text-[16px] font-josefin'>WooCommerce Pages</Link>
                 </div>
 
             </div>

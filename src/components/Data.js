@@ -355,3 +355,185 @@ export const relatedproduct=[
   price:'$51.00',
 },
 ]
+export const demo=[
+  {
+    image:'/images/demo1.png',
+    name:'Ut diam consequat',
+    color:'color:brown',
+    size:'size:XL',
+    price:"$32.00",
+
+  },
+  {
+    image:'/images/demo2.png',
+    name:'Ut diam consequat',
+    color:'color:brown',
+    size:'size:XL',
+    price:"$32.00",
+  },
+  {
+    image:'/images/demo3.png',
+    name:'Ut diam consequat',
+    color:'color:brown',
+    size:'size:XL',
+    price:"$32.00",
+  },
+  {
+    image:'/images/demo4.png',
+    name:'Ut diam consequat',
+    color:'color:brown',
+    size:'size:XL',
+    price:"$32.00",
+  },
+  {
+    image:'/images/demo5.png',
+    name:'Ut diam consequat',
+    color:'color:brown',
+    size:'size:XL',
+    price:"$32.00",
+  },
+]
+export const blogpage=[
+  {image:'/images/blog1.png',
+  text:'Surf Auxion',
+  date:'Aug 09 2020',
+  title:'Mauris at orci non vulputate diam tincidunt nec.',
+  discription:'Lorem ipsum dolor sit amet, quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.',
+},
+{image:'/images/blog2.png',
+text:'Surf Auxion',
+date:'Aug 09 2020',
+title:'Aenean vitae in aliquam ultrices lectus. Etiam.',
+discription:'Lorem ipsum dolor sit amet. quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.',
+},
+{image:'/images/blog3.png',
+text:'Surf Auxion',
+date:'Aug 09 2020',
+title:'Sit nam congue feugiat nisl, mauris amet nisi. ',
+discription:'Lorem ipsum dolor sit amet, quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.',
+},
+]
+export const post=[{
+  image:'/images/post1.png',
+  title:'It is a long established fact',
+  date:'Aug 09 2020',
+
+},
+{
+  image:'/images/post2.png',
+  title:'It is a long established fact',
+  date:'Aug 09 2020',
+
+},
+{
+  image:'/images/post3.png',
+  title:'It is a long established fact',
+  date:'Aug 09 2020',
+
+},
+{
+  image:'/images/post3.png',
+  title:'It is a long established fact',
+  date:'Aug 09 2020',
+
+},
+
+
+]
+export const sale=[
+  {
+    image:'/images/sale1.png',
+    title:'Elit ornare in enim mauris.',
+    date:'Aug 09 2020',
+  
+  },
+  {
+    image:'/images/sale2.png',
+    title:'Viverra pulvinar et enim.',
+    date:'Aug 09 2020',
+  
+  },
+  {
+    image:'/images/sale3.png',
+    title:'Mattis varius donec fdsfd',
+    date:'Aug 09 2020',
+  
+  },
+  
+]
+export const offer=[
+  {
+    image:'/images/offer1.png',
+    title:'Duis lectus est.',
+    price:'$12.00 - $15.00',
+  
+  },
+  {
+    image:'/images/offer2.png',
+    title:'Sed placerat.',
+    price:'$12.00 - $15.00',
+  
+  },
+  {
+    image:'/images/offer3.png',
+    title:'Netus proin.',
+    price:'$12.00 - $15.00',
+  
+  },
+  {
+    image:'/images/offer4.png',
+    title:'Platea in.',
+    price:'$12.00 - $15.00',
+  
+  },
+  
+] 
+export const singleProduct=[
+  {
+    image:'/images/f1.png',
+    title:'Quam sed',
+    price:'$32.00 ',
+    disacount:'$56.00',
+  
+  },
+  {
+    image:'/images/f2.png',
+    title:'Tristique sed',
+    price:'$32.00 ',
+    disacount:'$56.00',
+  
+  },
+  {
+    image:'/images/f3.png',
+    title:'A etiam',
+    price:'$32.00 ',
+    disacount:'$56.00',
+  
+  },
+  {
+    image:'/images/f5.png',
+    title:'Mi nisi',
+    price:'$32.00 ',
+    disacount:'$56.00',
+  
+  },
+]
+export const faq=[
+  {
+    title:"Eu dictumst cum at sed euismood condimentum?",
+    discription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis."
+  },
+  {
+    title:"Magna bibendum est fermentum eros.",
+    discription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis."
+  },
+  {
+    title:"Odio muskana hak eris conseekin sceleton?",
+    discription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis."
+  },
+  
+  {
+    title:"Elit id blandit sabara boi velit gua mara?",
+    discription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis."
+  },
+  ]

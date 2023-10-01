@@ -7,6 +7,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import { CiUser } from "react-icons/Ci";
 import { SlBasket } from "react-icons/sl";
 import DropDownMenu from "./DropDownMenu";
+import Link from "next/link";
 
 const AboveBar = () => {
   const languages = [
@@ -71,11 +72,11 @@ const AboveBar = () => {
               />
             </div>
             <div className=" flex  items-center  justify-center">
-              <p className=" text-base">Login</p>
+              <Link href="/login" className=" text-base">Login</Link>
               <CiUser color="white" className=" h-4 w-4" />
             </div>
             <div className=" flex  items-center  justify-center">
-              <p className=" text-base">Whishist</p>
+              <Link href="/demo" className=" text-base">Whishist</Link>
               <CiHeart color="white" className=" h-4 w-4" />
             </div>
             <div className=" flex  items-center  justify-center">

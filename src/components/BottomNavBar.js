@@ -44,9 +44,9 @@ const BottomNavBar = () => {
         </div>
         <Link href="/about/details">Pages</Link>
         <Link href="/about">Products</Link>
-        <Link  href="/SideBar" >Blog</Link>
+        <Link  href="/blog" >Blog</Link>
         <Link href="/shoplist">Shop</Link>
-        < Link  href="/order">Contact</Link>
+        < Link  href="/contactus">Contact</Link>
         </div>
         <form className="flex  items-center">
           <input placeholder='' className='h-[35px] w-[200px]   border-[1px] border-gray'></input>

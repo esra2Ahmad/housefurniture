@@ -31,7 +31,7 @@ const page = () => {
         </div>
       </div>
       <div className="max-w-[1140px] mx-auto md:px-10 xl:px-20 sm:px-2   h-[420px]  ">
-        <div className="flex flex-row gap-11 border border-red h-[390px] border-l-gray3 border-dashed border-b-gray3 border-t-0 border-r-0">
+        <div className="flex flex-row gap-11 border h-[390px] border-l-gray3 border-dashed border-b-gray3 border-t-0 border-r-0">
           <div className=" relative left-[-45px] ">
             <svg
               width="94"
