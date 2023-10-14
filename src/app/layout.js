@@ -18,7 +18,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
       <ShopContextProvider>
-
         {children}
         </ShopContextProvider>
 

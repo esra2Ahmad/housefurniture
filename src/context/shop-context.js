@@ -2,9 +2,8 @@
 import { page1 } from "@/components/Data";
 import React, { createContext, useState } from "react";
 export const ShopContext = createContext(
-
 {
-  cartItems: {},
+  cartItem: {},
   addToCart: () => {},
   updateCartItemCount: () => {},
   removeAllFromCart: () => {},
@@ -14,22 +13,23 @@ export const ShopContext = createContext(
 });
 const defaultCart = () => {
   let cart = {};
-  for (let i = 1; i < page1.length + 1; i++) {
+  for (let i = 1; i <=page1.length + 1; i++) {
     cart[i] = 0;
  }
   return cart;
 };
+
 export const ShopContextProvider = ({
   children,
 }) => {
-  const [cartItem, setCartItem] = useState(defaultCart());
+  const [cartItems, setCartItems] = useState(defaultCart());
   const getTotalCartAmount = () => {
     let totalAmount = 0;
-    for (const item in cartItem) {
-      if (cartItem[item] > 0) {
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
         let itemInfo = page1.find((product) => product.id === Number(item));
         if (itemInfo) {
-          totalAmount += cartItem[item] * itemInfo.price;
+          totalAmount += cartItems[item] * itemInfo.price;
         }
       }
     }
@@ -37,10 +37,10 @@ export const ShopContextProvider = ({
   };
   
   const addToCart = (itemId) => {
-    setCartItem((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
   };
   const removeFromCart = (itemId) => {
-    setCartItem((prev) => {
+    setCartItems((prev) => {
       if (prev[itemId] <= 0) {
         return { ...prev, [itemId]: 0 };
       }
@@ -48,7 +48,7 @@ export const ShopContextProvider = ({
     });
   };
   const updateCartItemCount = (newAmount, itemId) => {
-    setCartItem((prev) => {
+    setCartItems((prev) => {
       if (newAmount <= 0) {
         return { ...prev, [itemId]: 0 };
       }
@@ -56,21 +56,21 @@ export const ShopContextProvider = ({
     });
   };
   const removeAllFromCart = (itemId) => {
-    setCartItem((prev) => ({ ...prev, [itemId]: 0 }));
+    setCartItems((prev) => ({ ...prev, [itemId]: 0 }));
   };
 
   const checkout = () => {
-    setCartItem(defaultCart());
+    setCartItems(defaultCart());
   };
   const contextValue = { 
-    cartItem,
+    cartItems,
     addToCart,
     updateCartItemCount,
     removeAllFromCart,
     removeFromCart,
     getTotalCartAmount,
     checkout,};
-  console.log(cartItem);
+  console.log(cartItems);
   return (
     <ShopContext.Provider value={contextValue}>
       {children}

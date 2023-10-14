@@ -11,7 +11,7 @@ import { ShopContext } from "@/context/shop-context";
 import { page1 } from "@/components/Data";
 
 const page = () => {
-  const { cartItem, getTotalCartAmount, checkout } = useContext(ShopContext);
+  const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
   const router = useRouter();
   return (
     <div>
@@ -49,9 +49,9 @@ const page = () => {
             </div>
             
         <div className="w-full  /bg-red/  mt-[48px]" >
-          {page1.map((product, id) => {
-            if (cartItem[product.id] !== 0) {
-              return <CartItem key={id} {...product} />;
+          {page1.map((product, index) => {
+            if (cartItems[product.id] > 0) {
+              return <CartItem key={index} {...product} />;
             }
           })}
           

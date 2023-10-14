@@ -5,6 +5,7 @@ import { AiFillHeart, AiOutlineHeart, AiOutlineZoomIn } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
 import { useState,useContext } from "react";
 import { ShopContext } from "@/context/shop-context";
+import { items } from "../Data";
 
 const Gride = ({
   id,
@@ -18,10 +19,10 @@ const Gride = ({
   const toggleFavorite = () => {
     setIsFavorite((prev) => !prev);
   };
-  const { cartItem, addToCart, removeFromCart, updateCartItemCount } =
+  const { cartItems, addToCart, removeFromCart} =
    useContext(ShopContext);
   const toggleAddedToCart = () => {
-    if (cartItem[id] > 0) {
+    if (cartItems[id] > 0) {
       removeFromCart(id);
     } else {
       addToCart(id);
@@ -43,7 +44,7 @@ const Gride = ({
         <button
         onClick={() => toggleAddedToCart()}
         className={`${
-          cartItem[id] > 0 ? "bg-green" : "bg-white"
+          cartItems[id] > 0 ? "bg-green" : "bg-white"
         } hover:scale-125 duration-300 w-[30px] h-[30px] rounded-full shadow flex justify-center items-center`}>
           {" "}
           <BsCart2 />{" "}
