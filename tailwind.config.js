@@ -68,6 +68,8 @@ module.exports = {
       dark2:'#363385',
       blue6:'#5726DF',
       zinc4:'#A4B6C8',
+      lightgreen:'#EBF4F3',
+      blue7:'#3F509E',
     
     },
   },

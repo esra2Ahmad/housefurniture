@@ -7,6 +7,7 @@ import React from "react";
 import Link from "next/link";
 import Gride from "@/components/forpages/Gride";
 import { page1 } from "@/components/Data";
+import TitleHeader from "@/components/TitleHeader";
 
 const page = () => {
   return (
@@ -33,26 +34,11 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className=" h-[55px] w-full bg-red  ">
-        <div className="max-w-[1140px] mx-auto md:px-10 xl:px-20 sm:px-2 px-4 flex flex-row gap-[180px]">
-          <div>
-            <h1 className=" text-blue  font-bold  text-[22px] font-josefin">
-              Ecommerce Acceories & Fashion item{" "}
-            </h1>
-            <p className=" text-gray2  font-normal  text-[12px] font-josefin">
-              About 9,620 results (0.62 seconds)
-            </p>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-        
-      </div>
-      <div className=" max-w-[1140px] mx-auto md:px-10 xl:px-2 sm:px-2 px-4
-    grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4  gap-[53px] pt-[144px]">
+      <div className=" max-w-[1140px] mx-auto md:px-10 xl:pl-2 sm:px-2 ">
+         <TitleHeader/>
+         </div>
+      <div className=" max-w-[1140px] mx-auto md:px-10 xl:px-2 sm:px-2 
+    grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4  gap-[53px] pt-[44px]">
        {page1.map((detail, index) => (
           <Gride
             key={index}

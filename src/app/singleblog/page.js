@@ -49,7 +49,7 @@ const page = () => {
       <div className="h-[286px]  w-full   bg-medviolet mt-10 mb-[124px]">
         <div className="max-w-[1140px] mx-auto md:px-10 xl:px-20 sm:px-2 px-4 flex flex-col  gap-2 ">
           <h1 className=" text-dark  font-bold  text-[36px]  leading-normal mt-[75px]">
-            Blogbag
+            single Blog
           </h1>
           <div className="flex flex-row gap-2">
             <p className=" text-black  font-medium  text-[16px] font-josefin hover:text-pink">

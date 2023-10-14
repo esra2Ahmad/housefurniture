@@ -9,6 +9,7 @@ import SideBar from "@/components/forpages/SideBar";
 import { sidebar } from "@/components/Data";
 import Checkbox from "@/components/Checkbox";
 import Rating from "@/components/Rating";
+import TitleHeader from "@/components/TitleHeader";
 
 const page = () => {
   return (
@@ -35,23 +36,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className=" h-[55px] w-full bg-red  ">
-        <div className="max-w-[1140px] mx-auto md:px-10 xl:px-20 sm:px-2 px-4 flex flex-row gap-[180px]">
-          <div>
-            <h1 className=" text-blue  font-bold  text-[22px] font-josefin">
-              Ecommerce Acceories & Fashion item{" "}
-            </h1>
-            <p className=" text-gray2  font-normal  text-[12px] font-josefin">
-              About 9,620 results (0.62 seconds)
-            </p>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
+      <TitleHeader/>
       <div className="flex gap-14 max-w-[1140px] mx-auto md:px-10 xl:px-20 sm:px-2 px-4 ">
         <div className="w-[283px]   mt-11 flex flex-col gap-7">
           <div className="flex flex-col gap-[4px]">

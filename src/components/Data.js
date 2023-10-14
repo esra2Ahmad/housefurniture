@@ -536,4 +536,43 @@ export const faq=[
     title:"Elit id blandit sabara boi velit gua mara?",
     discription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed tristique mollis vitae, consequat gravida sagittis."
   },
+  ] 
+  export const product=[
+    {
+      image:"/images/e1.png",
+      title:"Ut diam consequat",
+      color:" Color Brown",
+      size:"SizeXL",
+      price:"$32.00",
+      
+},
+{
+  image:"/images/e2.png",
+  title:"Vel faucibus posuere",
+  color:" Color Brown",
+  size:"SizeXL",
+  price:"$32.00",
+},
+{
+  image:"/images/e3.png",
+  title:"Ac vitae vestibulum",
+  color:" Color Brown",
+  size:"SizeXL",
+  price:"$32.00",
+},
+{
+  image:"/images/e4.png",
+  title:"Elit massa diam",
+  color:" Color Brown",
+  size:"SizeXL",
+  price:"$32.00",
+
+},
+{
+  image:"/images/e5.png",
+  title:"Proin pharetra elementum",
+  color:" Color Brown",
+  size:"SizeXL",
+  price:"$32.00",
+},
   ]

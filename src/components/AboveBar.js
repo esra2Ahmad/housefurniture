@@ -34,10 +34,10 @@ const AboveBar = () => {
   return (
     <div className="w-full h-11 bg-violet">
       <div
-        className=" w-[1137px] 
+        className=" w-[11px] 
     h-full 
     mx-auto 
-    xl:px-20
+    xl:px-2
     md:px-10
     sm:px-2
     px-4  flex justify-center items-center"
@@ -79,9 +79,9 @@ const AboveBar = () => {
               <Link href="/demo" className=" text-base">Whishist</Link>
               <CiHeart color="white" className=" h-4 w-4" />
             </div>
-            <div className=" flex  items-center  justify-center">
+            <Link href='curt' className=" flex  items-center  justify-center">
               <SlBasket color="white" className=" h-4 w-4" />
-            </div>
+            </Link>
           </div>
         </div>
       </div>

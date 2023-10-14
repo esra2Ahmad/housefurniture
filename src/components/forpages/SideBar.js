@@ -15,7 +15,7 @@ const SideBar = (props) => {
           height="0"
           sizes="100wv"
           alt="shoplist"
-          className="w-auto h-auto"
+          className="w-auto h-auto "
         />
         <div className="flex flex-col gap-2 justify-center">
           <div className="flex flex-row  gap-1">

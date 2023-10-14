@@ -1,25 +1,22 @@
 import AboveBar from "@/components/AboveBar";
 import BottomNavBar from "@/components/BottomNavBar";
-import List from "@/components/List";
+import React, { useContext } from "react";
+import Link from "next/link";
 import Abovefooter from "@/components/footter/AboveFooter";
 import Bottomfooter from "@/components/footter/Bottomfooter";
-import React from "react";
-import Link from "next/link";
-import ShopList from "@/components/forpages/ShopList";
-import { shoplist } from "@/components/Data";
-import TitleHeader from "@/components/TitleHeader";
+import { product } from "@/components/Data";
+import CartItems from "@/components/CartItems";
+import { ShopContextProvider } from "@/context/shop-context";
 
 const page = () => {
   return (
     <div>
-      <div className="">
-        <AboveBar />
-        <BottomNavBar />
-      </div>
+      <AboveBar />
+      <BottomNavBar />
       <div className="h-[286px]  w-full   bg-medviolet mt-10 mb-[124px]">
         <div className="max-w-[1140px] mx-auto md:px-10 xl:px-20 sm:px-2 px-4 flex flex-col  gap-2 ">
           <h1 className=" text-dark  font-bold  text-[36px]  leading-normal mt-[75px]">
-          Shop List
+            Shopping curt
           </h1>
           <div className="flex flex-row gap-2">
             <p className=" text-black  font-medium  text-[16px] font-josefin hover:text-pink">
@@ -29,30 +26,21 @@ const page = () => {
               Pages .
             </p>
             <p className=" text-black  font-medium  text-[16px] font-josefin hover:text-pink">
-            Shop List .
+              Shoppingcurt.
             </p>
           </div>
         </div>
       </div>
-      <TitleHeader/>
-      <div className=" flex flex-col gap-1">
-       {shoplist.map((detail, index) => (
-          <ShopList
-            key={index}
-            image={detail.image}
-            title={detail.title}
-            price={detail.price}
-            disc={detail.disc}
-            discription={detail.discription}
-            
-          />
-        ))}
 
+      <div className=" flex flex-row gap-4">
+        <h1 className="w-[200px] bg-orange">Product</h1>
+        <h1>Price</h1>
+        <h1>Quantity</h1>
+        <h1>Total</h1>
+        <h1>Total Curt</h1>
       </div>
 
-      <div className="pt-20">
-        <List />
-
+      <div>
         <Abovefooter />
         <Bottomfooter />
       </div>

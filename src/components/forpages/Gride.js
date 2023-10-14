@@ -1,68 +1,91 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { AiFillHeart, AiOutlineHeart, AiOutlineZoomIn } from "react-icons/ai";
+import { BsCart2 } from "react-icons/bs";
+import { useState,useContext } from "react";
+import { ShopContext } from "@/context/shop-context";
 
-const Gride = (props) => {
+const Gride = ({
+  id,
+  image,
+  title,
+  price,
+  color,
+  size,
+  disc,
+}) => {
+  const [isFavorite, setIsFavorite] = useState(false);
+
+  const toggleFavorite = () => {
+    setIsFavorite((prev) => !prev);
+  };
+  const { cartItem, addToCart, removeFromCart, updateCartItemCount } =
+  useContext(ShopContext);
+  const toggleAddedToCart = () => {
+    if (cartItem[id] > 0) {
+      removeFromCart(id);
+    } else {
+      addToCart(id);
+    }
+  };
   return (
-    <div className=" group w-[270px] h-[363px] flex flex-col justify-start  gap-[53px]">
-      <div className="  relative bg-white hover:bg-neutral_100 duration-30 flex flex-col justify-center">
+    <div className="w-[290px] h-[363px] relative flex flex-col justify-between items-center group bg-neutral_100">
+      <div className="w-[290px] h-[280px]  bg-white flex justify-center items-center px-10 group-hover:bg-lightgreen">
         <Image
-          src={props.image}
+          src={image}
           width="0"
           height="0"
           sizes="100vw"
-          alt="gride of product"
-          className="w-[270px] h-[280px] scale-75 translate-y-5"
+          className="w-auto h-auto max-w-full"
+          alt=""
         />
-        <div className="w-[84.87px] h-[56.73px] left-[18px] top-[25px] absolute hidden group-hover:flex hover:scale-110 duration-300">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="87"
-            height="59"
-            viewBox="0 0 87 59"
-            fill="none"
-          >
-            <path
-              d="M1.09968 44.7253C1.49968 50.3253 4.93301 55.7253 6.59968 57.7253C7.09975 52.2253 19.5996 48.7253 22.0996 48.7253C24.0996 48.7253 37.9329 44.7253 44.5996 42.7253C53.9329 39.7253 75.0996 32.6254 85.0996 28.2254C88.5996 10.7254 79.0996 -0.774631 78.5996 1.22537C78.1996 2.82537 65.7663 7.55868 59.5996 9.72535C47.4329 14.2253 21.0996 23.5253 13.0996 24.7253C5.09961 25.9253 2.43299 28.892 2.09968 30.2253C1.59968 32.7253 0.69968 39.1253 1.09968 44.7253Z"
-              fill="#3F509E"
-              stroke="#3F509E"
-            />
-          </svg>
-          <p className="origin-top-left rotate-[-18.12deg] text-indigo-50 text-sm font-semibold left-[27px] top-[25.71px] absolute">
-            Sale
-          </p>
-        </div>
-        <div className="absolute left-[15px] top-[146px] hidden group-hover:flex flex-col justify-start items-center gap-[16px]">
-          <button className=" hover:scale-125 duration-300 text-[#2F1AC4]  justify-center items-center flex">
-            <AiOutlineHeart />
-          </button>
+      
+      <div className=" absolute left-[18px] bottom-[106px] hidden group-hover:flex flex-col justify-end items-center gap-[10px]">
+        <button
+        onClick={() => toggleAddedToCart()}
+        className={`${
+          cartItem[id] > 0 ? "bg-green" : "bg-white"
+        } hover:scale-125 duration-300 w-[30px] h-[30px] rounded-full shadow flex justify-center items-center`}>
+          {" "}
+          <BsCart2 />{" "}
+        </button>
 
-          <button className=" hover:scale-125 duration-300 text-[#2F1AC4]  justify-center items-center flex">
-            <AiFillHeart />
-          </button>
-
-          <button className=" hover:scale-125 duration-300 text-[#2F1AC4]  justify-center items-center flex">
-            <AiOutlineZoomIn />
-          </button>
-        </div>
-        <div className="flex  flex-col gap-1 justify-center items-center w-full h-[83px]">
-        <p className="font-josefin text-[18px] font-bold text-center text-blue">
-          {props.title}
-        </p>
-        <div className='flex gap-1  justify-center'>
-        <div className=' w-1 h-1   rounded-full border border-green bg-green  hover:red'>  </div>
-        <div className=' w-1 h-1  rounded-full border-pink bg-pink '>  </div>
-        <div className=' w-1 h-1 border rounded-full border-dark bg-dark '>  </div>
-        </div>
-        <div className="flex gap-5">
-          <p className=" font-josefin text-[14px] font-normal text-blue">
-            {props.price}
-          </p>
-          <p className="font-josefin text-[14px] font-normal text-medred line-through">
-            {props.disc}
-          </p>
-        </div>
+        <button className=" hover:scale-125 duration-300  w-4 h-4 justify-center items-center flex">
+          <AiOutlineZoomIn />
+        </button>
+        
+        {!isFavorite && (
+            <button
+              className=" hover:scale-125 duration-300 w-4 h-4  justify-center items-center flex"
+              onClick={toggleFavorite}
+            >
+              <AiOutlineHeart />
+            </button>
+          )}
+          {isFavorite && (
+            <button
+              className=" hover:scale-125 duration-300 w-4 h-4  justify-center items-center flex"
+              onClick={toggleFavorite}
+            >
+              <AiFillHeart />
+            </button>
+          )}
+          </div>
       </div>
+      <p className="text-center text-violet-950 text-lg font-bold mt-[18px]">{title} </p>
+      <div className="w-[42px] h-2.5 flex justify-between items-center pt-2">
+        <div className="w-2.5 h-2.5  bg-orange rounded-full" />
+        <div className="w-2.5 h-2.5  bg-pink rounded-full" />
+        <div className="w-2.5 h-2.5  bg-violet rounded-full" />
+      </div>
+      <div className="flex justify-center gap-[10px] items-center mt-[15px]">
+        <p className="text-center text-lightpurple text-sm font-normal">
+          {price}
+        </p>
+        <p className="text-center text-pink text-sm font-normal line-through">
+          {disc}
+        </p>
       </div>
     </div>
   );
