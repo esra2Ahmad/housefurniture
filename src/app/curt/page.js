@@ -5,7 +5,7 @@ import Abovefooter from "@/components/footter/AboveFooter";
 import Bottomfooter from "@/components/footter/Bottomfooter";
 import { useContext, useState } from "react";
 import { useRouter } from "next/navigation";
-import CartItems from "@/components/CartItems";
+import CartItem from "@/components/CartItem";
 import React from "react";
 import { ShopContext } from "@/context/shop-context";
 import { page1 } from "@/components/Data";
@@ -51,7 +51,7 @@ const page = () => {
         <div className="w-full  /bg-red/  mt-[48px]" >
           {page1.map((product, id) => {
             if (cartItem[product.id] !== 0) {
-              return <CartItems key={id} {...product} />;
+              return <CartItem key={id} {...product} />;
             }
           })}
           

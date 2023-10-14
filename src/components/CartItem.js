@@ -10,8 +10,8 @@ const CartItem= ({
   image,
   title,
   price,
-  color,
-  size,
+  disc,
+
 }) => {
   const {
     cartItem,
@@ -70,9 +70,9 @@ const CartItem= ({
           <div className=" ml-[17px]">
             <h3 className="text-black text-sm font-normal mb-[7px]">{title}</h3>
             <p className="text-zinc3 text-xs font-normal mb-[7px]">
-              Color:{color}
+              price:{price}
             </p>
-            <p className="text-zinc3 text-xs font-normal">Size: {size}</p>
+            <p className="text-zinc3 text-xs font-normal">oldprice:{disc}</p>
           </div>
         </div>
         <div className="flex justify-between relative w-[57%]">

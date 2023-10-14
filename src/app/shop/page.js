@@ -5,7 +5,7 @@ import Link from "next/link";
 import Abovefooter from "@/components/footter/AboveFooter";
 import Bottomfooter from "@/components/footter/Bottomfooter";
 import { product } from "@/components/Data";
-import CartItems from "@/components/CartItems";
+import CartItems from "@/components/CartItem";
 import { ShopContextProvider } from "@/context/shop-context";
 
 const page = () => {

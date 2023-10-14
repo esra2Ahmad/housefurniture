@@ -1,12 +1,22 @@
 "use client";
 import { page1 } from "@/components/Data";
 import React, { createContext, useState } from "react";
-export const ShopContext = createContext(null);
+export const ShopContext = createContext(
+
+{
+  cartItems: {},
+  addToCart: () => {},
+  updateCartItemCount: () => {},
+  removeAllFromCart: () => {},
+  removeFromCart: () => {},
+  getTotalCartAmount: () => 0,
+  checkout: () => {},
+});
 const defaultCart = () => {
   let cart = {};
   for (let i = 1; i < page1.length + 1; i++) {
     cart[i] = 0;
-  }
+ }
   return cart;
 };
 export const ShopContextProvider = ({

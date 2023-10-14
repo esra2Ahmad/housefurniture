@@ -11,8 +11,6 @@ const Gride = ({
   image,
   title,
   price,
-  color,
-  size,
   disc,
 }) => {
   const [isFavorite, setIsFavorite] = useState(false);
