@@ -49,9 +49,9 @@ const page = () => {
             </div>
             
         <div className="w-full  /bg-red/  mt-[48px]" >
-          {page1.map((product, index) => {
+          {page1.map((product, id) => {
             if (cartItem[product.id] !== 0) {
-              return <CartItems key={index} {...product} />;
+              return <CartItems key={id} {...product} />;
             }
           })}
           

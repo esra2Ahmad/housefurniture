@@ -4,7 +4,7 @@ import React, { createContext, useState } from "react";
 export const ShopContext = createContext(null);
 const defaultCart = () => {
   let cart = {};
-  for (let i = 0; i < page1.length + 1; i++) {
+  for (let i = 1; i < page1.length + 1; i++) {
     cart[i] = 0;
   }
   return cart;
@@ -17,7 +17,7 @@ export const ShopContextProvider = (props) => {
       if (cartItem[item] > 0) {
         let itemInfo = page1.find((product) => product.id === Number(item));
         if (itemInfo) {
-          totalAmount += cartItem[item] * itemInfo.props.price;
+          totalAmount += cartItem[item] * itemInfo.price;
         }
       }
     }
