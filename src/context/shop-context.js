@@ -10,12 +10,7 @@ const defaultCart = () => {
   return cart;
 };
 export const ShopContextProvider = ({
-  id,
-  image,
-  title,
-  price,
-  color,
-  size,
+  children,
 }) => {
   const [cartItem, setCartItem] = useState(defaultCart());
   const getTotalCartAmount = () => {
@@ -68,7 +63,7 @@ export const ShopContextProvider = ({
   console.log(cartItem);
   return (
     <ShopContext.Provider value={contextValue}>
-      {props.children}
+      {children}
     </ShopContext.Provider>
   );
 };

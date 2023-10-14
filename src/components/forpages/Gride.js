@@ -21,7 +21,7 @@ const Gride = ({
     setIsFavorite((prev) => !prev);
   };
   const { cartItem, addToCart, removeFromCart, updateCartItemCount } =
-  useContext(ShopContext);
+   useContext(ShopContext);
   const toggleAddedToCart = () => {
     if (cartItem[id] > 0) {
       removeFromCart(id);
