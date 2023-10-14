@@ -41,11 +41,12 @@ const page = () => {
     grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4  gap-[53px] pt-[44px]">
        {page1.map((detail, index) => (
           <Gride
+          
             key={index}
+            id={ detail.id}
             image={detail.image}
             title={detail.title}
             price={detail.price}
-            
             disc={detail.disc}
             
           />

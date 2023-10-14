@@ -14,7 +14,7 @@ const CartItem= ({
 
 }) => {
   const {
-    cartItem,
+    cartItems,
     addToCart,
     removeFromCart,
     updateCartItemCount,
@@ -87,7 +87,7 @@ const CartItem= ({
               -
             </button>
             <input
-              value={cartItem[id]}
+              value={cartItems[id]}
               onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
               className="bg-white focus:outline-none w-[27px] h-[15px] flex justify-center items-center text-center text-stone-700 text-xs font-normal"
             />
@@ -99,7 +99,7 @@ const CartItem= ({
             </button>
           </div>
           <p className="text-blue text-sm font-normal">
-          {price * cartItem[id]}
+          {price * cartItems[id]}
           </p>
         </div>
       </div>

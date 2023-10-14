@@ -1,8 +1,8 @@
-'use client'
+
 import BottomNavBar from "@/components/BottomNavBar";
-import AboveBar from "@/components/AboveBar";
-import "./globals.css";
+import AboveBar from "@/components/AboveBar"
 import List from "@/components/List";
+
 import Abovefooter from "@/components/footter/AboveFooter";
 import Bottomfooter from "@/components/footter/Bottomfooter";
 import { ShopContextProvider } from '@/context/shop-context'

@@ -50,7 +50,8 @@ const page = () => {
             
         <div className="w-full  /bg-red/  mt-[48px]" >
           {page1.map((product, index) => {
-            if (cartItems[product.id] > 0) {
+            if (cartItems[product.id] > 0)
+            { console.log(cartItems)
               return <CartItem key={index} {...product} />;
             }
           })}
@@ -99,7 +100,7 @@ const page = () => {
                 className="w-[312px] h-10 bg-green rounded-[3px] flex justify-center items-center text-white text-sm font-bold mt-[35px] hover:bg-green-600"
                 onClick={() => {
                   checkout();
-                  router.push("/shop/completed");
+                  router.push("../shop/page.js");
                 }}
               >
                 Proceed To Checkout

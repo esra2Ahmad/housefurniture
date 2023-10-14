@@ -5,7 +5,7 @@ import { AiFillHeart, AiOutlineHeart, AiOutlineZoomIn } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
 import { useState,useContext } from "react";
 import { ShopContext } from "@/context/shop-context";
-import { items } from "../Data";
+
 
 const Gride = ({
   id,
@@ -46,8 +46,8 @@ const Gride = ({
         className={`${
           cartItems[id] > 0 ? "bg-green" : "bg-white"
         } hover:scale-125 duration-300 w-[30px] h-[30px] rounded-full shadow flex justify-center items-center`}>
-          {" "}
-          <BsCart2 />{" "}
+          
+          <BsCart2 />
         </button>
 
         <button className=" hover:scale-125 duration-300  w-4 h-4 justify-center items-center flex">

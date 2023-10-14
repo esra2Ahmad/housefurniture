@@ -3,7 +3,7 @@ import { page1 } from "@/components/Data";
 import React, { createContext, useState } from "react";
 export const ShopContext = createContext(
 {
-  cartItem: {},
+  cartItems: {},
   addToCart: () => {},
   updateCartItemCount: () => {},
   removeAllFromCart: () => {},
@@ -13,15 +13,15 @@ export const ShopContext = createContext(
 });
 const defaultCart = () => {
   let cart = {};
-  for (let i = 1; i <=page1.length + 1; i++) {
+  for (let i = 1; i<page1.length + 1; i++) {
     cart[i] = 0;
  }
   return cart;
 };
 
-export const ShopContextProvider = ({
-  children,
-}) => {
+export const ShopContextProvider = (
+  {children,}
+) => {
   const [cartItems, setCartItems] = useState(defaultCart());
   const getTotalCartAmount = () => {
     let totalAmount = 0;
@@ -70,7 +70,7 @@ export const ShopContextProvider = ({
     removeFromCart,
     getTotalCartAmount,
     checkout,};
-  console.log(cartItems);
+  
   return (
     <ShopContext.Provider value={contextValue}>
       {children}
