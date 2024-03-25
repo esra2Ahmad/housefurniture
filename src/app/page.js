@@ -1,23 +1,19 @@
-
-
+import AboveBar from "@/pagesComponents/AboveBar";
 import "./globals.css";
-import AboveBar from "../components/AboveBar";
-import BottomNavBar from "../components/BottomNavBar";
-import FetauredProduct from "../components/FetauredProduct";
-import LeatestProduct from "../components/LeatestProduct";
-import Offers from "../components/Offers";
-import UniqueFeature from "../components/UniqueFeature";
-import Heropromo from "../components/Heroprom";
-import TrendingProducts from "../components/TrendingProducts";
-import DiscountItem from "../components/DiscountItem";
-import TopCategory from "../components/TopCategory";
-import LeatestUpdate from "../components/LeatestUpdate";
-import List from "../components/List";
-import LeatestBlog from "../components/LeatestBlog";
-import Abovefooter from "../components/footter/AboveFooter";
-import Bottomfooter from "../components/footter/Bottomfooter";
-
-
+import BottomNavBar from "@/pagesComponents/BottomNavBar";
+import Heropromo from "@/pagesComponents/HeroPromo";
+import FetauredProduct from "@/pagesComponents/FeatureProducts";
+import LeatestProduct from "@/pagesComponents/LeatestProduct";
+import Offers from "@/pagesComponents/Offers";
+import UniqueFeature from "@/pagesComponents/UniqueFeature";
+import TrendingProducts from "@/pagesComponents/TrendingProducts";
+import DiscountItem from "@/pagesComponents/DiscountItem";
+import TopCategory from "@/pagesComponents/TopCategory";
+import LeatestUpdate from "@/pagesComponents/LeatestUpdate";
+import List from "@/pagesComponents/List";
+import LeatestBlog from "@/pagesComponents/LeatestBlog";
+import Abovefooter from "@/pagesComponents/AboveFooter";
+import Bottomfooter from "@/pagesComponents/BottomFooter";
 
 
 export default function Home() {
@@ -26,16 +22,16 @@ export default function Home() {
       <AboveBar />
       <BottomNavBar />
       <Heropromo />
-      <FetauredProduct />
-      <LeatestProduct />
-      <Offers />
-      <UniqueFeature />
-      <TrendingProducts />
-      <DiscountItem />
-      <TopCategory />
-      <LeatestUpdate />
-      <List />
-      <LeatestBlog />
+      <FetauredProduct/>
+      <LeatestProduct/>
+      <Offers/>
+      <UniqueFeature/>
+      <TrendingProducts/>
+      <DiscountItem/>
+      <TopCategory/>
+      <LeatestUpdate/>
+      <List/>
+      <LeatestBlog/>
       <Abovefooter/>
       <Bottomfooter/>
     </div>
